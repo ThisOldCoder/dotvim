@@ -72,7 +72,7 @@ imap <Tab> <C-N>
 imap <S-Tab> <C-P>
 
 " Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
+map <Leader>t :FuzzyFinderTextMate<Enter>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
