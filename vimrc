@@ -83,8 +83,12 @@ map <Leader>t :FuzzyFinderTextMate<Enter>
 
 " Automatic fold settings for specific files. Uncomment to use.
 autocmd FileType ruby setlocal foldmethod=syntax shiftwidth=2 tabstop=2
+autocmd FileType coffee setlocal foldmethod=syntax shiftwidth=2 tabstop=2
+autocmd FileType slim setlocal foldmethod=syntax shiftwidth=2 tabstop=2
+autocmd FileType cucumber setlocal foldmethod=syntax shiftwidth=2 tabstop=2
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
-autocmd Syntax c,cpp,css,html,ruby,vim,xml,xhtml,perl normal zR
+autocmd FileType php setlocal foldmethod=syntax shiftwidth=2 tabstop=2 expandtab autoindent smartindent
+autocmd Syntax c,coffee,cpp,css,html,perl,php,ruby,vim,xml,xhtml normal zR
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
